@@ -1,0 +1,31 @@
+INSTANCE = {
+  t3micro    = "t3.micro"
+  t3medium   = "t3.medium"
+  t3xlarge   = "t3.xlarge"
+  m5xlarge   = "m5.xlarge"
+  m54xlarge  = "m5.4xlarge"
+  m5large    = "m5.large"
+  m512xlarge = "m5.12xlarge"
+  m52xlarge  = "m5.2xlarge"
+  c5large    = "c5.large"
+  c5xlarge   = "c5.xlarge"
+  r5xlarge   = "r5.xlarge"
+  r58xlarge  = "r5.8xlarge"
+  r54xlarge  = "r5.4xlarge"
+  r52xlarge  = "r5.2xlarge"
+  r5large    = "r5.large"
+  r4large    = "r4.large"
+  r44xlarge  = "r4.4xlarge"
+  r48xlarge  = "r4.8xlarge"
+  r42xlarge  = "r4.2xlarge"
+  t2medium   = "t2.medium"
+  t3large    = "t3.large"
+  t32xlarge  = "t3.2xlarge"
+  r5metal    = "r5.metal"
+  r5d8xlarge = "r5d.8xlarge"
+}
+
+AMIS = {
+    linux_ami = "ami-057752b3f1d6c4d6c"
+    ubuntu_ami = "ami-08e5424edfe926b43"
+}
