@@ -26,6 +26,7 @@ data "aws_vpc" "ibm_internal_svc" {
     Name = "ibm_internal_svc"
   }
 }
+
 ################################################################################
 #### Data pulls to attach availability zones and encryption on servers      ####
 ################################################################################

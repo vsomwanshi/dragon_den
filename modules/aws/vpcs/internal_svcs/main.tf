@@ -4,8 +4,8 @@ terraform {
 
 resource "aws_vpc" "ibm_internal_svc" {
   cidr_block           = var.internal_svcs_datacenter_cidr
-  enable_dns_hostnames = true
-  enable_dns_support   = true
+#  enable_dns_hostnames = true
+#  enable_dns_support   = true
   instance_tenancy     = var.instance_tenancy
 
   tags = {
