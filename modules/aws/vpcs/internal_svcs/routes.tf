@@ -1,4 +1,4 @@
-# Route tables attached to subnets
+# Route table created and attached to VPC
 resource "aws_route_table" "ibm_internal_svc_rt" {
   vpc_id = aws_vpc.ibm_internal_svc.id
 
@@ -8,7 +8,8 @@ resource "aws_route_table" "ibm_internal_svc_rt" {
   }
 }
 
-# Create IGW
+
+# Create IGW and attach it to ibm_internal_svc VPC
 resource "aws_internet_gateway" "ibm-igw" {
   vpc_id = aws_vpc.ibm_internal_svc.id
 
@@ -19,7 +20,6 @@ resource "aws_internet_gateway" "ibm-igw" {
 }
 
 # Create route and attach to Internet gateway
-
 resource "aws_route" "my_route" {
   route_table_id         = aws_route_table.ibm_internal_svc_rt.id
   destination_cidr_block = "0.0.0.0/0"

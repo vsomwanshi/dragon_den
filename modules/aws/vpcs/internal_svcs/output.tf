@@ -9,4 +9,3 @@ output "ibm_internal_svc" {
 output "ibm_internal_svc_available" {
   value = data.aws_availability_zones.ibm_internal_svc_available.id
 }
-

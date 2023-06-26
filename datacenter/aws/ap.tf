@@ -23,4 +23,4 @@ aws_secret_key                = ""
 ####  override a default server build value.                                ####
 ################################################################################
 deploy_den_master_node = true
-deploy_den_worker_node  = false
+deploy_den_worker_node  = true
