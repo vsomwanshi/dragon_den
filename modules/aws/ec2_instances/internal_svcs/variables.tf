@@ -52,7 +52,7 @@ variable "deploy_den_master_node_count" {
 }
 variable "deploy_den_worker_node_count" {
   type    = number
-  default = 3
+  default = 6
 }
 
 

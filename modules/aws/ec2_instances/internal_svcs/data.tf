@@ -30,7 +30,12 @@ data "aws_vpc" "ibm_internal_svc" {
 ################################################################################
 #### Data pulls to attach availability zones and encryption on servers      ####
 ################################################################################
-data "aws_availability_zones" "ibm_internal_svc_available" {}
+#data "aws_availability_zones" "ibm_internal_svc_available" {}
+
+data "aws_availability_zones" "ibm_internal_svc_available" {
+  state = "available"
+}
+
 data "aws_ebs_default_kms_key" "root_block_encryption" {}
 
 ################################################################################

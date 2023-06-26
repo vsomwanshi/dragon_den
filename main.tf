@@ -22,6 +22,7 @@ module "vpc_internal_svcs" {
 #  domain_controller_2           = var.domain_controller_2
 }
 
+
 ################################################################################
 #### Below is the variables and details that pertain to the internal        ####
 #### EC2 Instance deployment.                                               ####
