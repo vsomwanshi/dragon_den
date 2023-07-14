@@ -4,6 +4,7 @@ variable "datacenter_prefix" {}
 variable "internal_svcs_datacenter_cidr" {}
 variable "instance_tenancy" {}
 variable "datacenter" {}
+variable "ibm_rosa_sg" {}
 
 #variable "s3_bucket_encryption" {}
 #variable "domain_controller_1_ip" {}
@@ -25,6 +26,7 @@ variable "deploy_domain_controllers" {
   type    = bool
   default = true
 }
+
 
 ################################################################################
 #### Below are the default 'deploy' values for the variables used for these ####
@@ -48,11 +50,11 @@ variable "deploy_den_worker_node" {
 
 variable "deploy_den_master_node_count" {
   type    = number
-  default = 3
+  default = 1
 }
 variable "deploy_den_worker_node_count" {
   type    = number
-  default = 3
+  default = 1
 }
 
 

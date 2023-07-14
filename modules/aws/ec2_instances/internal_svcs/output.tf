@@ -27,6 +27,6 @@ output "den_master_node" {
   value = var.deploy_den_master_node ? data.aws_instance.den_master_node[0].id : " "
 }
 
-#output "den_worker_node" {
-#  value = var.deploy_den_worker_node ? data.aws_instance.elastic[1].id : " "
-#}
+output "den_worker_node" {
+  value = var.deploy_den_worker_node ? data.aws_instance.den_worker_node[0].id : " "
+}

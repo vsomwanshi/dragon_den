@@ -66,6 +66,15 @@ variable "ibm_internal_svc" {
   type    = string
   default = "data.aws_vpc.ibm_internal_svc.id"
 }
+
+################################################################################
+#### SG variable is here, modify or update accordingly                     ####
+################################################################################
+#variable "ibm_rosa_sg" {
+#  type    = string
+#  default = "data.aws_security_group.ibm_rosa_sg.id"
+#}
+
 ################################################################################
 variable "instance_tenancy" {
   type    = string
@@ -97,6 +106,7 @@ variable "INSTANCE" {
   type = map(string)
 }
 
+
 ################################################################################
 ################################################################################
 #### Below are the default 'deploy' values for the variables used for these ####
@@ -111,15 +121,16 @@ variable "deploy_den_worker_node" {
   type    = bool
   default = true
 }
+
 ################################################################################
 #### These are the default server deploy counts to be use for the AWS       ####
 ####  terraform code for these modules.                                     ####
 ################################################################################
 variable "deploy_den_master_node_count" {
   type    = number
-  default = 3
+  default = 1
 }
 variable "deploy_den_worker_node_count" {
   type    = number
-  default = 6
+  default = 1
 }

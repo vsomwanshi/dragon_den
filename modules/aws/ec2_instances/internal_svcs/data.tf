@@ -45,6 +45,7 @@ data "aws_instance" "den_master_node" {
   count       = var.deploy_den_master_node ? var.deploy_den_master_node_count : 0
   instance_id = aws_instance.den_master_node[count.index].id
 }
+
 data "aws_instance" "den_worker_node" {
   count       = var.deploy_den_worker_node ? var.deploy_den_worker_node_count : 0
   instance_id = aws_instance.den_worker_node[count.index].id

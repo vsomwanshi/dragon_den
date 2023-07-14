@@ -5,23 +5,23 @@
 ####  datacenters/aws/ directory of the terraform modules.                 ####
 ###############################################################################
 cloud_provider                = "aws"
-region                        = "ap-south-1"
-datacenter_prefix             = "ap1"
+region                        = "us-east-2"
+datacenter_prefix             = "oh"
 datacenter_cidr               = "192.31.0.0/16"
 internal_svcs_datacenter_cidr = "192.31.0.0/16"
 transit_gateway               = ""
 instance_tenancy              = "default"
-datacenter                    = "mumbai"
+datacenter                    = "ohio"
 s3_bucket_encryption          = ""
 #domain_controller_1_ip       = "10.188.9.10"
 #domain_controller_2_ip       = "10.188.10.10"
-aws_access_key                = "AKIAXGUKFH7CO4WBC34Y"
-aws_secret_key                = "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"
+aws_access_key                = "AKIA6BNUDMQJPSEBCCX3"
+aws_secret_key                = "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"
 
 ################################################################################
 #### Override values for servers to be built.  Uncomment value below to     ####
 ####  override a default server build value.                                ####
 ################################################################################
-
-deploy_den_master_node = true
-deploy_den_worker_node  = true
+deploy_ibm_rosa_cluster = true
+#deploy_den_master_node = false
+#deploy_den_worker_node  = false
