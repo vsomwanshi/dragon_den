@@ -15,8 +15,8 @@ datacenter                    = "mumbai"
 s3_bucket_encryption          = ""
 #domain_controller_1_ip       = "10.188.9.10"
 #domain_controller_2_ip       = "10.188.10.10"
-aws_access_key                = "AKIAXGUKFH7CO4WBC34Y"
-aws_secret_key                = "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"
+aws_access_key                = ""
+aws_secret_key                = ""
 
 ################################################################################
 #### Override values for servers to be built.  Uncomment value below to     ####

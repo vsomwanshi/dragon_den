@@ -15,8 +15,8 @@ datacenter                    = "ohio"
 s3_bucket_encryption          = ""
 #domain_controller_1_ip       = "10.188.9.10"
 #domain_controller_2_ip       = "10.188.10.10"
-aws_access_key                = "AKIA6BNUDMQJPSEBCCX3"
-aws_secret_key                = "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"
+aws_access_key                = ""
+aws_secret_key                = ""
 
 ################################################################################
 #### Override values for servers to be built.  Uncomment value below to     ####
